@@ -2017,7 +2017,7 @@ spec:
                   apiVersion: v1
                   kind: Secret
                   name: postgresql-operator-controller-manager-config
-                  path: .metadata.annotations.ibm-license-key-applied
+                  path: .metadata.name
                   namespace: {{ .OperatorNs }}
                 required: true
             bootstrap:
@@ -2220,7 +2220,7 @@ spec:
                   apiVersion: v1
                   kind: Secret
                   name: postgresql-operator-controller-manager-config
-                  path: .metadata.annotations.ibm-license-key-applied
+                  path: .metadata.name
                   namespace: {{ .OperatorNs }}
                 required: true
             bootstrap:
